@@ -17,6 +17,11 @@
             </svg>
             BuhOne
           </div>
+          <button class="burger__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="header__right">
             <div class="header__info">
               <ul class="header__info-list">
@@ -90,7 +95,7 @@
     </div>
   </section>
 
-  <div class="contact">
+  <section class="contact">
     <div class="container">
       <div class="contact__inner">
         <div class="contact__content">
@@ -101,7 +106,7 @@
             <a class="contact__info contact__info-tel" href="tel:+71112223344"> 8 (111) 222-33-44</a>
             <a class="contact__info contact__info-mail" href="mailto:order@buhone.ru">order@buhone.ru</a>
         </div>
-        <form action="" class="form">
+        <form class="form" id="myForm" action="" autocomplete="off">
             <label class="form__label">
               Имя
               <input class="form__input" type="text" placeholder="Иван" required/>
@@ -112,48 +117,70 @@
             </label>
             <label class="form__label form__label-text">
               Сообщение
-              <textarea  class="form__text" placeholder="Ваше сообщение" required></textarea> 
+              <textarea class="form__text" autocomplete="off" data-gramm="false" placeholder="Ваше сообщение" required></textarea> 
             </label>
     
-            <button class="button form__btn">Отправить сообщение</button>
+            <button id="myButton" class="button form__btn" >Отправить сообщение</button>
           </form>
-      </div>
+          <div id="overlay"></div>
+          <div id="myPopup">
+            <button class="close" id="closeBtn">X</button>
+            <h3>Ваше сообщение успешно отправлено.</h3>
+            <p>Мы подумаем</p>
+          </div>
 
-     
+      </div>
     </div>
-  </div>
+  </section>
 </main>
+
 
    
 
+
 </body>
+
 
 <footer class="footer">
 
+
     <div class="container">
+
 
         <div class="footer__inner">
 
+
             <div class="footer__copy">
+
 
                 2019&nbsp;&copy; Все права защищены. БухОне.ру
 
+
             </div>
+
 
             <div class="footer__dev">
 
+
                 Разработано: BuhOne
+
 
             </div>
 
+
         </div>
+
 
        
 
+
     </div>
+
 
 </footer>
 
+
 <script src="js/main.min.js"></script>
+
 
 </html>
