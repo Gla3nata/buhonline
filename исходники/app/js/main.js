@@ -28,8 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const burgerMenu = document.querySelector('.burger__menu')
   const menu = document.querySelector('.header__right')
+  const body = document.getElementsByTagName('body')[0];
 
   burgerMenu.addEventListener('click', () => {
     menu.classList.toggle('active')
     burgerMenu.classList.toggle('active')
+    body.classList.toggle('overlay')
   })
